@@ -4,6 +4,11 @@ function academy_post_types(){
 		'rewrite' => array(
 			'slug' => 'events'
 		),
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt'
+		),
 		'public' => true,
 		'has_archive' => true,
 		'show_in_rest' => true,
