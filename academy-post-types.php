@@ -50,6 +50,7 @@ function academy_post_types(){
 		'supports' => array(
 			'title',
 			'editor',
+			'thumbnail'
 		),
 		'public' => true,
 		'show_in_rest' => true,
