@@ -44,5 +44,23 @@ function academy_post_types(){
 		),
 		'menu_icon' => 'dashicons-awards'
 	));
+
+	//Teacher post type
+	register_post_type('teacher', array(
+		'supports' => array(
+			'title',
+			'editor',
+		),
+		'public' => true,
+		'show_in_rest' => true,
+		'labels' => array(
+			'name' => 'Teachers',
+			'add_new_item' => 'Add New Teacher',
+			'edit_item' => 'Edit Teacher',
+			'all_items' => 'All Teachers',
+			'singular_name' => "Teacher"
+		),
+		'menu_icon' => 'dashicons-businessman'
+	));
 }
 add_action('init', 'academy_post_types');
