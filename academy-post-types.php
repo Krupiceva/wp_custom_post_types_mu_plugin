@@ -68,6 +68,8 @@ function academy_post_types(){
 
 	//Campus post type
 	register_post_type('campus', array(
+		'capability_type' => 'campus',
+		'map_meta_cap' => true,
 		'rewrite' => array(
 			'slug' => 'campuses'
 		),
